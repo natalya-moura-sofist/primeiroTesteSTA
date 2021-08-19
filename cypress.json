@@ -1,9 +1,10 @@
 {
-   "chromeWebSecurity": false,
-   "baseUrl": "https://www.saucedemo.com/",
-   "defaultCommandTimeout": 10000,
-   "env": {
-       "senhaAutorizada": "secret_sauce",
-       "usuarioAutorizado":"standard_user"
-   }
+  "chromeWebSecurity": false,
+  "baseUrl": "https://www.saucedemo.com/",
+  "defaultCommandTimeout": 10000,
+  "env": {
+    "senhaAutorizada": "secret_sauce",
+    "usuarioAutorizado": "standard_user"
+  },
+  "projectId": "6y8ox6"
 }

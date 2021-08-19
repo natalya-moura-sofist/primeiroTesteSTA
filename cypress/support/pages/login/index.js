@@ -19,6 +19,7 @@
         assertivaLoginValido(){
 
             cy.get('.title').should('contain', 'Products');
+            cy.screenshot('paginaDeProdutos');
 
         };
 
@@ -33,7 +34,7 @@
         assertivaLoginBloqueado(){
 
             cy.get('[data-test=error]').should('contain', 'Epic sadface: Sorry, this user has been locked out.'); 
-
+            cy.screenshot('mensagemDeErroBloqueado');
         };
 
         preencherLoginProblematico(){
@@ -46,7 +47,7 @@
 
         assertivaLoginProblematico(){
             cy.get('.title').should('contain', 'Products');
-
+            cy.screenshot('paginaDeProdutosProblematica');
         };    
 
         preencherUsuarioEmBranco(){
@@ -59,7 +60,7 @@
         assertivaUsuarioEmBranco(){
 
             cy.get('[data-test=error]').should('contain', 'Epic sadface: Username is required');
-
+            cy.screenshot('mensagemDeErroUsuario');
         };
 
         preencherSenhaEmBranco(){
@@ -72,7 +73,7 @@
         assertivaSenhaEmBranco(){
 
             cy.get('[data-test=error]').should('contain', 'Epic sadface: Password is required');
-
+            cy.screenshot('mensagemDeErroSenha');
         };
         
         preencherSenhaInvalida(){
@@ -86,7 +87,7 @@
         assertivaSenhaInvalida(){
 
             cy.get('[data-test=error]').should('contain', 'Epic sadface: Username and password do not match any user in this service');
-
+            cy.screenshot('mensagemDeErroDoNotMatch');
         };
 
 

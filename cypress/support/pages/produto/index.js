@@ -17,6 +17,7 @@
 
             cy.get('[data-test=finish]').click();
             cy.get('.title').should('contain', 'Checkout: Complete!');
+            cy.screenshot('compraComSucesso');
 
         };
 
@@ -36,6 +37,7 @@
         
             cy.xpath('//*[@id="finish"]').click();
             cy.xpath('//*[@class="title"]').should('contain', 'Checkout: Complete!');
+            cy.screenshot('compraComSucessoXpath');
 
         };
 
