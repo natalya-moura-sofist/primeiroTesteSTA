@@ -1,6 +1,8 @@
 
 # Projeto STA
 
+oi
+
 <p align="center">
 <img src="https://ik.imagekit.io/jko2xukqoru/6049186b5f07a_S2TAeSmxTRq.png" width="200" height="100" />
 </p>
