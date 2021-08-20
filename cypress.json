@@ -1,10 +1,12 @@
 {
+  "video": false,
   "chromeWebSecurity": false,
   "baseUrl": "https://www.saucedemo.com/",
   "defaultCommandTimeout": 10000,
   "env": {
     "senhaAutorizada": "secret_sauce",
-    "usuarioAutorizado": "standard_user"
-  },
-  "projectId": "6y8ox6"
+    "usuarioAutorizado": "standard_user",
+  "TAGS": "not (@NaoFazLogin or @xpath)", 
+  "projectId": "uqdvt2"
+  }
 }
