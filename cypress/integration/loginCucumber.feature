@@ -4,7 +4,7 @@ Feature: Login
         Como usuário, desejo acessar o site do Swag Labs com usuário e senha
         e ser redirecionado para a página de produtos
 
-    @FazLogin
+    @Login
     Scenario: Fazer Login na plataforma com sucesso
 
         Given que o usuário esta na página de login
