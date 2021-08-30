@@ -14,7 +14,7 @@ Cenario: Caminho feliz para compra de um produto
 @xpath
 Cenario: Caminho feliz para compra de um produto com xpath    
     Quando tenta realizar uma compra
-    Entaoa mesma deve ser realizada com sucesso
+    Entao a mesma deve ser realizada com sucesso
 
 
 
