@@ -1,51 +1,47 @@
 import {Given, When, Then} from "cypress-cucumber-preprocessor/steps"
 import Logins from '../../support/pages/login/index'
 
-
-Given(/^que o usuário esta na página de login$/, () => {
-	Logins.acessarPagina();
+Given('que o usuário esta na página de login', () => {
+    Logins.acessarPagina();
+	
 });
 
-
 //Login na plataforma com sucesso
-When(/^realiza o login com usuario e senha válidos$/, () => {
+When('realiza o login com usuario e senha válidos', () => {
 	Logins.preencherLoginValido();
 });
 
-Then(/^é direcionado para a página de produtos$/, () => {
+Then('é direcionado para a página de produtos', () => {
 	Logins.assertivaLoginValido();
 });
 
 
-
 //Login na plataforma com usuário bloqueado
-When(/^tenta realizar o login com usuário bloqueado e senha válida$/, () => {
+When('tenta realizar o login com usuário bloqueado e senha válida', () => {
 	Logins.preencherLoginBloqueado();
 });
 
-Then(/^será exibida uma mensagem de erro de usuário bloqueado$/, () => {
+Then('será exibida uma mensagem de erro de usuário bloqueado', () => {
 	Logins.assertivaLoginBloqueado();
 });
 
 
-
 //Login na plataforma com usuário problemático
-When(/^realiza o login com usuário problemático e senha válida$/, () => {
+When('realiza o login com usuário problemático e senha válida', () => {
 	Logins.preencherLoginProblematico();
 });
 
-Then(/^será direcionado para a página de produtos$/, () => {
+Then('será direcionado para a página de produtos', () => {
 	Logins.assertivaLoginProblematico();
 });
 
 
-
 //Fazer Login na plataforma com usuário em branco
-When(/^tenta realizar o login com usuário em branco$/, () => {
+When('tenta realizar o login com usuário em branco', () => {
 	Logins.preencherUsuarioEmBranco();
 });
 
-Then(/^será exibida uma mensagem de erro requerindo um usuário$/, () => {
+Then('será exibida uma mensagem de erro requerindo um usuário', () => {
 	Logins.assertivaUsuarioEmBranco();
 });
 

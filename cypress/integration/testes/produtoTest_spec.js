@@ -5,22 +5,17 @@ import Login from '../../support/pages/login/index'
 
 describe('Caminho feliz para', () => {
     
-    beforeEach(() => {
-       
+    beforeEach(() => { 
         Login.acessarPagina();
-        Login.preencherLoginValido();
-        
+        Login.preencherLoginValido();  
     });
 
         it('Adicionar um produto no carrinho e fechar pedido', () => {
-
             Compra.adicionarProdutoNoCarrinhoEPreenchercadastro();
             Compra.confimaçaoDeCompra();
-          
         });
 
         it('Adicionar um produto no carrinho e fechar pedido com xpath', () => {
-
             Compra.adicionarProdutoNoCarrinhoEPreenchercadastroXpath();
             Compra.confimaçaoCompraXpath();
         });

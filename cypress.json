@@ -6,7 +6,6 @@
   "env": {
     "senhaAutorizada": "secret_sauce",
     "usuarioAutorizado": "standard_user",
-  "TAGS": "not (@NaoFazLogin or @xpath)", 
   "projectId": "uqdvt2"
   }
 }
